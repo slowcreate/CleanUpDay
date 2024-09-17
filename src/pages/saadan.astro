@@ -6,6 +6,8 @@ import SavetheDate from "../components/SavetheDate.astro";
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 import Baggrund from "../components/Baggrund.astro";
+import Accordion from "../components/Accordion.astro";
+import Steps from "../components/Steps.astro";
 ---
 
 <MainLayout title="Sådan Gør Du">
@@ -20,12 +22,77 @@ import Baggrund from "../components/Baggrund.astro";
         </div>
     </section>
     <Baggrund class="w-full">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi dolores illo earum praesentium repellendus, eligendi velit mollitia vitae. Architecto consequatur maiores vel, velit labore saepe error blanditiis modi reprehenderit?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae alias doloribus quae non dolorem ut maxime distinctio sint adipisci velit quidem deserunt maiores reprehenderit ullam, reiciendis dicta amet suscipit. Ipsam!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae alias doloribus quae non dolorem ut maxime distinctio sint adipisci velit quidem deserunt maiores reprehenderit ullam, reiciendis dicta amet suscipit. Ipsam!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae alias doloribus quae non dolorem ut maxime distinctio sint adipisci velit quidem deserunt maiores reprehenderit ullam, reiciendis dicta amet suscipit. Ipsam!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae alias doloribus quae non dolorem ut maxime distinctio sint adipisci velit quidem deserunt maiores reprehenderit ullam, reiciendis dicta amet suscipit. Ipsam!</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae alias doloribus quae non dolorem ut maxime distinctio sint adipisci velit quidem deserunt maiores reprehenderit ullam, reiciendis dicta amet suscipit. Ipsam!</p>
+        <article>
+            <div>
+                <Steps tal="1."/>
+                <h3>Ryd op på din smartphone!</h3>
+            </div>
+            <Accordion>
+                <summary>Smid ubrugte apps ud</summary>
+                <p>Vær frygtløs! Slet de glemte apps og spil, du aldrig bruger. De optager kun plads og dræner batteri med ligegyldige opdateringer.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Farvel til gamle konti!</summary>
+                <p>Gamle konti og e-mails fra teenageårene? Ud med dem! Det giver din telefon et friskt pust og gør den hurtigere.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Ryd op i dine billeder</summary>
+                <p>Slet dubletter og ligegyldige billeder. Du kan frigøre flere gigabyte plads!</p>
+            </Accordion>
+        </article>
+        <article>
+            <div>
+                <h3>Hard drive detox</h3>
+            </div>
+            <Accordion>
+                <summary>Slet dubletter & ubrugelige filer</summary>
+                <p>Fjern alle filer, der er blevet overflødige, eller som ligger der to gange.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Ryd op i fotos & videoer</summary>
+                <p>Slet slørede billeder, dubletter, og videoer, du ikke længere har brug for.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Arkivér det vigtige</summary>
+                <p>Gem de filer, der betyder noget, og forbered dig på at finde sjove, glemte skatte!</p>
+            </Accordion>
+        </article>
+        <article>
+            <div>
+                <h3>Mailboks makeover</h3>
+            </div>
+            <Accordion>
+                <summary>Arkivér & ryd ud</summary>
+                <p>Filter mails efter dato, arkivér de ældste, og slet de, du ikke længere har brug for.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Meld Dig Fra Nyhedsbreve</summary>
+                <p>Udmeld dig fra nyhedsbreve, du ikke læser, og slip af med lange samtaler, hvor du kun beholder den nyeste.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Søg & Slet i Massevis</summary>
+                <p>Find lignende mails ved at søge efter navne og ord, så du kan slette dem i én omgang. Vær modig og tryk på slet-knappen!</p>
+            </Accordion>
+        </article>
+        <article>
+            <div>
+                <h3>Nye digitale vaner</h3>
+            </div>
+            <Accordion>
+                <summary>Drop ‘OK’ emails</summary>
+                <p>Brug coworking-platforme i stedet for at sende unødvendige mails. Stop med ‘ok’ og ‘tak’ beskeder!</p>
+            </Accordion>
+            <Accordion>
+                <summary>Centralisér og vær bevidst</summary>
+                <p>Opbevar vigtige filer i én sky, så du ikke skal have dem på alle enheder. Tænk dig om før du sikkerhedskopierer – gem kun det, du virkelig behøver.</p>
+            </Accordion>
+            <Accordion>
+                <summary>Skru ned for digitalt forbrug</summary>
+                <p>Sluk videoen under møder, skru ned for streamingkvaliteten, begræns spilletid, og brug mindre tid på sociale medier. Mænd på tilmeldingslister og nyhedsbreve for at mindske dit miljøaftryk!</p>
+            </Accordion>
+        </article>
+        
+        
     </Baggrund>
     <section>
         <p class="poppins font-bold text-5xl md:text-8xl text-[#0a1748]">Tak for dit bidrag!</p>

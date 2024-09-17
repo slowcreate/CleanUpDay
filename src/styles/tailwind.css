@@ -38,7 +38,7 @@
     @apply poppins text-2xl md:text-5xl;
   }
   h3 {
-    @apply bebas_neue text-4xl md:text-6xl;
+    @apply bebas_neue text-4xl md:text-6xl mt-0;
   }
   h4 {
     @apply poppins text-2xl md:text-3xl;
