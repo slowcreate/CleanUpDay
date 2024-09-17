@@ -1,0 +1,47 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import SavetheDate from "../components/SavetheDate.astro";
+import { Image } from 'astro:assets';
+import mand from "../assets/images/mand_der_sidder.png";
+import Input from '../components/Input.astro';
+import Textarea from '../components/Textarea.astro';
+---
+
+<MainLayout title="Digital Cleanup Day">
+  <article class="bg-[#DB901B]">
+    <section class="bg-white text-center py-16">
+      <h1>TAK FORDI DU DELTOG!</h1>
+      <p>Del dit bidrag nedenfor</p>
+    </section>
+
+    <section class="py-16 relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <!-- Mand der sidder -->
+      <div class="w-full flex justify-center md:justify-start">
+        <Image src={mand} alt="Mand der sidder" class="w-1/2 h-auto" />
+      </div>
+
+      <!-- Form -->
+      <form class="max-w-lg space-y-4 mx-auto md:ml-auto z-10">
+        <Input id="antal-gb" label="Antal GB slettet" type="text" />
+        <Input id="fornavn" label="Fornavn" type="text" />
+        <Input id="efternavn" label="Efternavn" type="text" />
+        <Input id="land" label="Land" type="text" />
+        <Input id="email" label="E-mail" type="email" />
+        <Textarea id="feedback" label="Hvad fik du ud af Digital Cleanup Day?" />
+
+        <div class="text-center">
+          <Button variant="secondary">Indsend</Button>
+        </div>
+      </form>
+    </section>
+
+    <section class="bg-white py-16 text-center relative">
+      <!-- Godt gået component -->
+      <div class="absolute right-8 top-0">
+        <SavetheDate />
+      </div>
+    </section>
+  </article>
+</MainLayout>
