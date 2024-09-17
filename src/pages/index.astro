@@ -5,6 +5,7 @@ import Link from '../components/Link.astro';
 import SavetheDate from "../components/SavetheDate.astro";
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Baggrund from "../components/Baggrund.astro";
 ---
 <MainLayout title="Digital Cleanup Day">
 	<article class="">
@@ -18,19 +19,21 @@ import thumbsup from "../assets/images/thumbsup.png";
 				</div>
 			</div>
 		</section>
-		<section class="my-10 grid auto-cols-auto">
-			<div></div>
-			<div class="flex flex-col">
-				<h3 class="">Sådan deltager du</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur! Ad nisi labore, nulla dolorem repudiandae commodi? Velit temporibus sapiente tenetur optio tempore, numquam ipsa modi quas laborum ratione. Voluptatum.</p>
-				<div class="flex justify-center gap-10 md:gap-20">
-					<Button variant="secondary">Privat</Button>
-					<Button variant="secondary">Organisation</Button>
+		<Baggrund class="w-full">
+			<section class="py-32 grid auto-cols-auto">
+				<div></div>
+				<div class="flex flex-col justify-center items-center">
+					<h3 class="mb-6">Sådan deltager du</h3>
+					<p class="mx-10 mb-10 flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur! Ad nisi labore, nulla dolorem repudiandae commodi? Velit temporibus sapiente tenetur optio tempore, numquam ipsa modi quas laborum ratione. Voluptatum.</p>
+					<div class="flex justify-center gap-10 md:gap-20">
+						<Button variant="secondary">Privat</Button>
+						<Button variant="secondary">Organisation</Button>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="my-10">
-			<h3>Digital Cleanup Day i numre</h3>
+			</section>
+		</Baggrund>
+		<section class="my-36">
+			<h3 class="mb-10 flex items-center justify-center">Digital Cleanup Day i numre</h3>
 			<div class="bg-[#0A1748] max-w-fit p-4 pr-24 rounded-e-full fade-in-left">
 				<h5 class="md:mx-20 md:mr-44 text-white">3,625 tons CO2 undgået årligt</h5>
 			</div>
@@ -41,32 +44,34 @@ import thumbsup from "../assets/images/thumbsup.png";
 				<h5 class="md:mx-20 md:mr-48 text-white">1,184,747 deltagere</h5>
 			</div>
 		</section>
-		<section class="m-5 my-10">
-			<h3>Hvorfor bør du deltage?</h3>
-			<div class="md:flex flex-row">
-				<div class="md:ml-5">
-					<h6>Færre e-mails, hurtigere computer</h6>
-					<p>For hver e-mail du sender, udleder du CO2 svarende til en pære, der er tændt i 6 minutter. Skær ned på de gamle mails og få en hurtigere maskine!</p>
-					<h6>Bitcoin bruger mere energi end New Zealand</h6>
-					<p>Bitcoin-mining kræver mere strøm end et helt land. Hjælp med at reducere det digitale energiforbrug - dine enheder vil takke dig.</p>
-					<h6>Ryd op og forlæng levetiden på din computer</h6>
-					<p>Jo mindre digitalt skrald du har, jo længere holder dine devices. Det betyder færre regninger og mere tid med en hurtig computer!</p>
+		<Baggrund class="w-full">
+			<section class="p-5 py-32">
+				<h3 class="mb-10 flex items-center justify-center">Hvorfor bør du deltage?</h3>
+				<div class="md:flex flex-row">
+					<div class="md:ml-5">
+						<h6>Færre e-mails, hurtigere computer</h6>
+						<p>For hver e-mail du sender, udleder du CO2 svarende til en pære, der er tændt i 6 minutter. Skær ned på de gamle mails og få en hurtigere maskine!</p>
+						<h6>Bitcoin bruger mere energi end New Zealand</h6>
+						<p>Bitcoin-mining kræver mere strøm end et helt land. Hjælp med at reducere det digitale energiforbrug - dine enheder vil takke dig.</p>
+						<h6>Ryd op og forlæng levetiden på din computer</h6>
+						<p>Jo mindre digitalt skrald du har, jo længere holder dine devices. Det betyder færre regninger og mere tid med en hurtig computer!</p>
+					</div>
+					<div class="md:ml-5">
+						<h6>Mindsk den digitale jungle</h6>
+						<p>90 % af al data bliver aldrig brugt igen efter 3 måneder. Ryd op og find nemmere det, du rent faktisk skal bruge - ingen flere "hvor lagde jeg nu lige den fil?"</p>
+						<h6>Internettet sviner - og det er din chance for at ændre det</h6>
+						<p>Internettet producerer over 900 millioner tons CO2 årligt. Ryd op i dine gamle filer, og lad nettet ånde lidt friere.</p>
+						<h6>Stop med at gemme det, du aldrig bruger</h6>
+						<p>99 % af al data er blevet skabt inden for de sidste 10 år, og alligevel bliver næsten ingen af dem brugt. Fjern dem og gør din harddisk mere effektiv!</p>
+					</div>
 				</div>
-				<div class="md:ml-5">
-					<h6>Mindsk den digitale jungle</h6>
-					<p>90 % af al data bliver aldrig brugt igen efter 3 måneder. Ryd op og find nemmere det, du rent faktisk skal bruge - ingen flere "hvor lagde jeg nu lige den fil?"</p>
-					<h6>Internettet sviner - og det er din chance for at ændre det</h6>
-					<p>Internettet producerer over 900 millioner tons CO2 årligt. Ryd op i dine gamle filer, og lad nettet ånde lidt friere.</p>
-					<h6>Stop med at gemme det, du aldrig bruger</h6>
-					<p>99 % af al data er blevet skabt inden for de sidste 10 år, og alligevel bliver næsten ingen af dem brugt. Fjern dem og gør din harddisk mere effektiv!</p>
-				</div>
-			</div>
-		</section>
-		<section class="my-10 md:grid grid-cols-2">
+			</section>
+		</Baggrund>
+		<section class="my-36 md:grid grid-cols-2">
 			<div>
 				<SavetheDate class="max-w-40 mx-auto"></SavetheDate>
 			</div>
-			<div class="flex flex-col justify-center items-start h-full">
+			<div class="flex flex-col justify-center items-start h-full mx-5">
 				<p class="mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam! Id neque similique facere impedit aliquid veniam iure nisi eos omnis. Expedita reprehenderit odio aut accusamus soluta non eum cupiditate?</p>
 				<Button variant="secondary">Tilføj til din kalender</Button>
 			</div>
