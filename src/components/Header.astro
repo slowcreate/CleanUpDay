@@ -6,11 +6,11 @@ import logo from "../assets/images/Digital_Cleanup_Day.webp";
 <script src="https://cdn.tailwindcss.com"></script>
 
 <article class="bg-[#0A1748]">
-    <nav class="flex justify-between items-center px-8 py-4 bg-[#0A1748]">
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-4 bg-[#0A1748]">
         <!-- Logo -->
         <a href="/">
             <Image src={logo} alt="Digital Cleanup Day" class="w-16 h-16 mr-8" />
-          </a>          
+        </a>          
         
         <!-- Navigation Links -->
         <div class="flex space-x-8">
@@ -19,24 +19,14 @@ import logo from "../assets/images/Digital_Cleanup_Day.webp";
             <a href="#" class="text-white text-sm font-poppins font-normal hover:text-[#DB901B] transition">Læringscenter</a>
             <a href="#" class="text-white text-sm font-poppins font-normal hover:text-[#DB901B] transition">World Cleanup Day</a>            
         </div>
-          
 
         <!-- Knap -->
         <a href="/del_dine_resultater">
             <Button size="small">Del dine resultater</Button>
-          </a>
-          
-
-
+        </a>
     </nav>
-</article>
+    
 
-  <style>
-         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
-        .font-bebas {
-            font-family: 'Bebas Neue', cursive;
-        }
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <div class="pt-20">
+    </div>
+</article>
