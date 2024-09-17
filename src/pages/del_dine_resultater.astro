@@ -19,33 +19,33 @@ import Baggrund from "../components/Baggrund.astro";
 
     <Baggrund class="w-full">
       <section class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- Mand der sidder -->
-        <div>
-          <Image src={mand} alt="Mand der sidder" class="w-1/2 h-auto ml-48" />
-        </div>
-    
-        <!-- Form -->
-        <form class="max-w-lg space-y-4 mx-auto md:ml-auto z-10">
-          <Input id="antal-gb" label="Antal GB slettet" type="text" />
-          <Input id="fornavn" label="Fornavn" type="text" />
-          <Input id="efternavn" label="Efternavn" type="text" />
-          <Input id="land" label="Land" type="text" />
-          <Input id="email" label="E-mail" type="email" />
-          <Textarea id="feedback" label="Hvad fik du ud af Digital Cleanup Day?" />
-    
-          <div class="text-center">
-            <Button variant="secondary">Indsend</Button>
+          <!-- Mand der sidder -->
+          <div>
+            <Image src={mand} alt="Mand der sidder" class="w-1/4 md:w-1/2 h-auto mx-auto md:ml-48" />
           </div>
-        </form>
+    
+          <!-- Form -->
+          <form class="max-w-lg space-y-4 mx-auto md:ml-auto z-10">
+            <Input id="antal-gb" label="Antal GB slettet" type="text" />
+            <Input id="fornavn" label="Fornavn" type="text" />
+            <Input id="efternavn" label="Efternavn" type="text" />
+            <Input id="land" label="Land" type="text" />
+            <Input id="email" label="E-mail" type="email" />
+            <Textarea id="feedback" label="Hvad fik du ud af Digital Cleanup Day?" />
+
+            <!-- Align the button to the left -->
+            <div class="text-left">
+              <Button variant="secondary">Indsend</Button>
+            </div>
+          </form>
+
       </section>
     </Baggrund>
 
-  
-      <!-- Godt gået component -->
-      <div class="w-1/3 mx-auto">
-        <SavetheDate />
-      </div>
-      
-    
+    <!-- Godt gået component -->
+    <div class="w-auto md:w-1/3 mx-auto">
+      <SavetheDate />
+    </div>
+
   </article>
 </MainLayout>

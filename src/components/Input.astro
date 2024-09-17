@@ -3,5 +3,5 @@ const { type = "text", id, label, placeholder = "", ...props } = Astro.props;
 ---
 <div class="mb-4">
     <label for={id} class="block text-sm text-[#0A1748] font-bold mb-2">{label}</label>
-    <input type={type} id={id} placeholder={placeholder} class="w-full p-2 rounded-full border-none focus:outline-none" style="box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);" {...props} />
+    <input type={type} id={id} placeholder={placeholder} class="w-full md:w-[350px] p-2 rounded-full border-none focus:outline-none" style="box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);" {...props} />
 </div>
