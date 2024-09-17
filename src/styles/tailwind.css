@@ -1,8 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  .bebas_neue {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h1 {
+    @apply bebas_neue text-7xl md:text-9xl;
+    color: #0a1748;
+  }
+  h2 {
+    @apply poppins text-2xl md:text-5xl;
+    color: #0a1748;
+  }
+  h3 {
+    @apply bebas_neue text-4xl md:text-6xl;
+    color: #0a1748;
+  }
+  h4 {
+    @apply poppins text-2xl md:text-4xl;
+    color: #0a1748;
+  }
+  p {
+    @apply poppins text-base md:text-xl;
+    color: #0a1748;
+  }
 }
 
 @layer utilities {
