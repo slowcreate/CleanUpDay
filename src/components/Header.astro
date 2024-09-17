@@ -8,20 +8,24 @@ import logo from "../assets/images/Digital_Cleanup_Day.webp";
 <article class="bg-[#0A1748]">
     <nav class="flex justify-between items-center px-8 py-4 bg-[#0A1748]">
         <!-- Logo -->
-        <div class="mr-4"> <!-- Reduced margin-right -->
-            <Image src={logo} alt="Digital Cleanup Day" class="w-16 h-16" />
-        </div>
+        <a href="/">
+            <Image src={logo} alt="Digital Cleanup Day" class="w-16 h-16 mr-8" />
+          </a>          
         
         <!-- Navigation Links -->
-        <div class="flex space-x-8"> <!-- Reduced spacing between links -->
-            <a href="#" class="text-white text-base font-poppins font-normal hover:text-[#DB901B] transition">Sådan gør du</a>
-            <a href="#" class="text-white text-base font-poppins font-normal hover:text-[#DB901B] transition">Ressourcer</a>
-            <a href="#" class="text-white text-base font-poppins font-normal hover:text-[#DB901B] transition">Læringscenter</a>
-            <a href="#" class="text-white text-base font-poppins font-normal hover:text-[#DB901B] transition">World Cleanup Day</a>            
+        <div class="flex space-x-8">
+            <a href="#" class="text-white text-sm font-poppins font-normal hover:text-[#DB901B] transition">Sådan gør du</a>
+            <a href="#" class="text-white text-sm font-poppins font-normal hover:text-[#DB901B] transition">Ressourcer</a>
+            <a href="#" class="text-white text-sm font-poppins font-normal hover:text-[#DB901B] transition">Læringscenter</a>
+            <a href="#" class="text-white text-sm font-poppins font-normal hover:text-[#DB901B] transition">World Cleanup Day</a>            
         </div>
+          
 
         <!-- Knap -->
-        <Button size="small">Del dine resultater</Button>
+        <a href="/del_dine_resultater">
+            <Button size="small">Del dine resultater</Button>
+          </a>
+          
 
 
     </nav>
