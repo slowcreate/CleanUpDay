@@ -7,41 +7,45 @@ import { Image } from 'astro:assets';
 import mand from "../assets/images/mand_der_sidder.png";
 import Input from '../components/Input.astro';
 import Textarea from '../components/Textarea.astro';
+import Baggrund from "../components/Baggrund.astro";
 ---
 
 <MainLayout title="Digital Cleanup Day">
-  <article class="bg-[#DB901B]">
-    <section class="bg-white text-center py-16">
+  <article>
+    <section class="text-center py-16">
       <h1>TAK FORDI DU DELTOG!</h1>
       <p>Del dit bidrag nedenfor</p>
     </section>
 
-    <section class="py-16 relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-      <!-- Mand der sidder -->
-      <div class="w-full flex justify-center md:justify-start">
-        <Image src={mand} alt="Mand der sidder" class="w-1/2 h-auto" />
-      </div>
-
-      <!-- Form -->
-      <form class="max-w-lg space-y-4 mx-auto md:ml-auto z-10">
-        <Input id="antal-gb" label="Antal GB slettet" type="text" />
-        <Input id="fornavn" label="Fornavn" type="text" />
-        <Input id="efternavn" label="Efternavn" type="text" />
-        <Input id="land" label="Land" type="text" />
-        <Input id="email" label="E-mail" type="email" />
-        <Textarea id="feedback" label="Hvad fik du ud af Digital Cleanup Day?" />
-
-        <div class="text-center">
-          <Button variant="secondary">Indsend</Button>
+    <Baggrund class="w-full">
+      <section class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Mand der sidder -->
+        <div>
+          <Image src={mand} alt="Mand der sidder" class="w-1/2 h-auto ml-48" />
         </div>
-      </form>
-    </section>
+    
+        <!-- Form -->
+        <form class="max-w-lg space-y-4 mx-auto md:ml-auto z-10">
+          <Input id="antal-gb" label="Antal GB slettet" type="text" />
+          <Input id="fornavn" label="Fornavn" type="text" />
+          <Input id="efternavn" label="Efternavn" type="text" />
+          <Input id="land" label="Land" type="text" />
+          <Input id="email" label="E-mail" type="email" />
+          <Textarea id="feedback" label="Hvad fik du ud af Digital Cleanup Day?" />
+    
+          <div class="text-center">
+            <Button variant="secondary">Indsend</Button>
+          </div>
+        </form>
+      </section>
+    </Baggrund>
 
-    <section class="bg-white py-16 text-center relative">
+  
       <!-- Godt gået component -->
-      <div class="absolute right-8 top-0">
-        <SavetheDate></SavetheDate>
+      <div class="w-1/3 mx-auto">
+        <SavetheDate />
       </div>
-    </section>
+      
+    
   </article>
 </MainLayout>
