@@ -1,0 +1,16 @@
+---
+const {tal, overskrift} = Astro.props;
+---
+<section class="flex items-center underline decoration-8 decoration-[#0a1748]">
+    <div class="relative text-center w-[106px] h-[102px] md:w-[186px] md:h-[179px]">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186 179" fill="none">
+                <path d="M185.368 87.1284C185.932 93.4076 186.581 101.075 185.056 110.956C183.813 119.002 178.229 147.342 154.318 165.169C129.005 184.038 99.3868 179.017 83.289 176.29C69.3527 173.928 40.6474 169.062 19.8838 143.276C18.2734 141.273 -7.50511 108.235 2.16336 70.2743C6.45569 53.4203 16.3017 41.209 22.9025 33.0268C28.8971 25.5946 36.502 16.1665 49.2994 9.07527C67.2586 -0.873528 84.7035 -0.272262 95.3884 0.236026C108.4 0.84969 141.398 2.40555 163.943 28.0865C181.884 48.5171 184.18 73.9377 185.374 87.1346L185.368 87.1284Z" fill="#0A1748"/>
+            </svg>
+            <div class="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4">
+                <p class="text-white font-bold text-5xl md:text-7xl">{tal}</p>
+            </div>
+        </div>
+    </div>
+    <h3>{overskrift}</h3>
+</section>

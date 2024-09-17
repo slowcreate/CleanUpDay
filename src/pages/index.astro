@@ -8,14 +8,14 @@ import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Digital Cleanup Day">
 	<article class="">
-		<section class="px-5 my-10 md:flex flex-row">
-			<div class="grid auto-cols-auto	grid-rows-">
+		<section class="px-10 my-10 md:flex flex-row">
+			<div class="grid auto-cols-auto	auto-rows-auto">
 				<h1 class="uppercase col-span-3 row-span-3 text-center">Digital <br> Cleanup <br> Day</h1>
-				<h4 class="text-base md:text-3xl text-[#DB901B] row-start-4 col-start-3 -translate-y-32 -translate-x-7 md:-translate-y-48 md:translate-x-4">15. <br> marts <br> 2025</h4>
-			</div>
-			<div class="">
-				<h2>Hvad er Digital Cleanup Day?</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi itaque odio modi facere at corporis iusto quibusdam asperiores unde quidem fuga, omnis inventore porro fugit optio? Libero, minima ut!</p>
+				<h4 class="text-[#DB901B] row-start-4 col-start-3 -translate-y-48 translate-x-4">15. <br> marts <br> 2025</h4>
+				<div class="md:col-start-4">
+					<h2>Hvad er Digital Cleanup Day?</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi itaque odio modi facere at corporis iusto quibusdam asperiores unde quidem fuga, omnis inventore porro fugit optio? Libero, minima ut!</p>
+				</div>
 			</div>
 		</section>
 		<section class="my-10 grid auto-cols-auto">
@@ -41,10 +41,10 @@ import thumbsup from "../assets/images/thumbsup.png";
 				<h5 class="md:mx-20 md:mr-48 text-white">1,184,747 deltagere</h5>
 			</div>
 		</section>
-		<section class="my-10">
+		<section class="m-5 my-10">
 			<h3>Hvorfor bør du deltage?</h3>
 			<div class="md:flex flex-row">
-				<div>
+				<div class="md:ml-5">
 					<h6>Færre e-mails, hurtigere computer</h6>
 					<p>For hver e-mail du sender, udleder du CO2 svarende til en pære, der er tændt i 6 minutter. Skær ned på de gamle mails og få en hurtigere maskine!</p>
 					<h6>Bitcoin bruger mere energi end New Zealand</h6>
@@ -52,7 +52,7 @@ import thumbsup from "../assets/images/thumbsup.png";
 					<h6>Ryd op og forlæng levetiden på din computer</h6>
 					<p>Jo mindre digitalt skrald du har, jo længere holder dine devices. Det betyder færre regninger og mere tid med en hurtig computer!</p>
 				</div>
-				<div>
+				<div class="md:ml-5">
 					<h6>Mindsk den digitale jungle</h6>
 					<p>90 % af al data bliver aldrig brugt igen efter 3 måneder. Ryd op og find nemmere det, du rent faktisk skal bruge - ingen flere "hvor lagde jeg nu lige den fil?"</p>
 					<h6>Internettet sviner - og det er din chance for at ændre det</h6>
@@ -66,8 +66,8 @@ import thumbsup from "../assets/images/thumbsup.png";
 			<div>
 				<SavetheDate class="max-w-40 mx-auto"></SavetheDate>
 			</div>
-			<div class="">
-				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam! Id neque similique facere impedit aliquid veniam iure nisi eos omnis. Expedita reprehenderit odio aut accusamus soluta non eum cupiditate?</p>
+			<div class="flex flex-col justify-center items-start h-full">
+				<p class="mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam! Id neque similique facere impedit aliquid veniam iure nisi eos omnis. Expedita reprehenderit odio aut accusamus soluta non eum cupiditate?</p>
 				<Button variant="secondary">Tilføj til din kalender</Button>
 			</div>
 		</section>
