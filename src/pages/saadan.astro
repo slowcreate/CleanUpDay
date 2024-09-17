@@ -24,8 +24,7 @@ import Steps from "../components/Steps.astro";
     <Baggrund class="w-full">
         <article>
             <div>
-                <Steps tal="1."/>
-                <h3>Ryd op på din smartphone!</h3>
+                <Steps tal="1." overskrift="Ryd op på din smartphone"/>
             </div>
             <Accordion>
                 <summary>Smid ubrugte apps ud</summary>
@@ -41,9 +40,7 @@ import Steps from "../components/Steps.astro";
             </Accordion>
         </article>
         <article>
-            <div>
-                <h3>Hard drive detox</h3>
-            </div>
+            <Steps tal="2." overskrift="Hard drive detox" /> 
             <Accordion>
                 <summary>Slet dubletter & ubrugelige filer</summary>
                 <p>Fjern alle filer, der er blevet overflødige, eller som ligger der to gange.</p>
@@ -58,9 +55,7 @@ import Steps from "../components/Steps.astro";
             </Accordion>
         </article>
         <article>
-            <div>
-                <h3>Mailboks makeover</h3>
-            </div>
+            <Steps tal="3." overskrift="Mailboks makeover"/>
             <Accordion>
                 <summary>Arkivér & ryd ud</summary>
                 <p>Filter mails efter dato, arkivér de ældste, og slet de, du ikke længere har brug for.</p>
@@ -75,9 +70,7 @@ import Steps from "../components/Steps.astro";
             </Accordion>
         </article>
         <article>
-            <div>
-                <h3>Nye digitale vaner</h3>
-            </div>
+            <Steps tal="4." overskrift="Nye digitale vaner"/>
             <Accordion>
                 <summary>Drop ‘OK’ emails</summary>
                 <p>Brug coworking-platforme i stedet for at sende unødvendige mails. Stop med ‘ok’ og ‘tak’ beskeder!</p>
