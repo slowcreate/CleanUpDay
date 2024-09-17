@@ -1,13 +1,79 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
+import SavetheDate from "../components/SavetheDate.astro";
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
+<MainLayout title="Digital Cleanup Day">
+	<article class="">
+		<section class="my-10 md:flex flex-row">
+			<div class="flex justify-center md:justify-start">
+				<h1 class="uppercase">Digital Cleanup Day</h1>
+				<h4>15. <br> marts <br> 2025</h4>
+			</div>
+			<div>
+				<h2>Hvad er Digital Cleanup Day?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi itaque odio modi facere at corporis iusto quibusdam asperiores unde quidem fuga, omnis inventore porro fugit optio? Libero, minima ut!</p>
+			</div>
+		</section>
+		<section class="my-10 grid auto-cols-auto">
+			<div></div>
+			<div class="flex flex-col">
+				<h3 class="">Sådan deltager du</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur! Ad nisi labore, nulla dolorem repudiandae commodi? Velit temporibus sapiente tenetur optio tempore, numquam ipsa modi quas laborum ratione. Voluptatum.</p>
+				<div class="flex justify-center gap-10 md:gap-20">
+					<Button variant="secondary">Privat</Button>
+					<Button variant="secondary">Organisation</Button>
+				</div>
+			</div>
+		</section>
+		<section class="my-10">
+			<h3>Digital Cleanup Day i numre</h3>
+			<div class="bg-[#0A1748] max-w-fit p-4 pr-24 rounded-e-full">
+				<h5 class="md:mx-20 md:mr-44 text-white">3,625 tons CO2 undgået årligt</h5>
+			</div>
+			<div class="bg-[#061F7F] max-w-fit p-4 pr-20 rounded-e-full">
+				<h5 class="md:mx-20 md:mr-44 text-white">14.5 M GB data slettet</h5>
+			</div>
+			<div class="bg-[#072AAE] max-w-fit p-4 rounded-e-full">
+				<h5 class="md:mx-20 md:mr-48 text-white">1,184,747 deltagere</h5>
+			</div>
+		</section>
+		<section class="my-10">
+			<h3>Hvorfor bør du deltage?</h3>
+			<div class="md:flex flex-row">
+				<div>
+					<h6>Færre e-mails, hurtigere computer</h6>
+					<p>For hver e-mail du sender, udleder du CO2 svarende til en pære, der er tændt i 6 minutter. Skær ned på de gamle mails og få en hurtigere maskine!</p>
+					<h6>Bitcoin bruger mere energi end New Zealand</h6>
+					<p>Bitcoin-mining kræver mere strøm end et helt land. Hjælp med at reducere det digitale energiforbrug - dine enheder vil takke dig.</p>
+					<h6>Ryd op og forlæng levetiden på din computer</h6>
+					<p>Jo mindre digitalt skrald du har, jo længere holder dine devices. Det betyder færre regninger og mere tid med en hurtig computer!</p>
+				</div>
+				<div>
+					<h6>Mindsk den digitale jungle</h6>
+					<p>90 % af al data bliver aldrig brugt igen efter 3 måneder. Ryd op og find nemmere det, du rent faktisk skal bruge - ingen flere "hvor lagde jeg nu lige den fil?"</p>
+					<h6>Internettet sviner - og det er din chance for at ændre det</h6>
+					<p>Internettet producerer over 900 millioner tons CO2 årligt. Ryd op i dine gamle filer, og lad nettet ånde lidt friere.</p>
+					<h6>Stop med at gemme det, du aldrig bruger</h6>
+					<p>99 % af al data er blevet skabt inden for de sidste 10 år, og alligevel bliver næsten ingen af dem brugt. Fjern dem og gør din harddisk mere effektiv!</p>
+				</div>
+			</div>
+		</section>
+		<section class="my-10 md:grid grid-cols-2">
+			<div>
+				<SavetheDate></SavetheDate>
+			</div>
+			<div class="">
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam! Id neque similique facere impedit aliquid veniam iure nisi eos omnis. Expedita reprehenderit odio aut accusamus soluta non eum cupiditate?</p>
+				<Button variant="secondary">Tilføj til din kalender</Button>
+			</div>
+		</section>
+		<!-- <Image src={} alt=""></Image> -->
 	</article>
 </MainLayout>
+
+<style>
+</style>

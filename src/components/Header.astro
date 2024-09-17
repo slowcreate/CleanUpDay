@@ -3,18 +3,9 @@ import Button from '../components/Button.astro';
 import { Image } from 'astro:assets';
 import logo from "../assets/images/Digital_Cleanup_Day.webp";
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Menu</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
-    </style>
-</head>
-<body class="bg-[#0A1748]">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<article class="bg-[#0A1748]">
     <nav class="flex justify-between items-center px-8 py-4 bg-[#0A1748]">
         <!-- Logo -->
         <div class="mr-4"> <!-- Reduced margin-right -->
@@ -29,12 +20,15 @@ import logo from "../assets/images/Digital_Cleanup_Day.webp";
             <a href="#" class="text-white text-base font-poppins font-normal hover:text-[#DB901B] transition">World Cleanup Day</a>            
         </div>
 
-        <!-- Smaller Button -->
-        <Button class="px-4 py-2"></Button> <!-- Reduced padding and text size -->
+        <!-- Knap -->
+        <Button>Del dine resultater</Button>
+
 
     </nav>
+</article>
 
-    <style>
+  <style>
+         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
         .font-bebas {
             font-family: 'Bebas Neue', cursive;
         }
@@ -42,5 +36,3 @@ import logo from "../assets/images/Digital_Cleanup_Day.webp";
             font-family: 'Poppins', sans-serif;
         }
     </style>
-</body>
-</html>
