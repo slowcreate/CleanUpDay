@@ -4,25 +4,30 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import SavetheDate from "../components/SavetheDate.astro";
 import { Image } from 'astro:assets';
+import Dame from "../assets/images/saadan/dame.png";
+import Mand from "../assets/images/saadan/mand.png";
 import thumbsup from "../assets/images/thumbsup.png";
 import Baggrund from "../components/Baggrund.astro";
 import Accordion from "../components/Accordion.astro";
 import Steps from "../components/Steps.astro";
+import Pil from "../components/Pil.astro";
 ---
 
 <MainLayout title="Sådan Gør Du">
-    <section>
+    <section class="pb-40 text-center">
         <h1>Sådan gør du!</h1>
-        <h2>Kan jeg som enkeltperson reelt gøre en forskel?</h2>
-        <div class="flex">
-            <h2 class="uppercase">Svaret er: </h2>
-            <div>
-                <p class="uppercase font-black text-4xl">Ja</p>
-            </div>
+        <h2 >Kan jeg som enkeltperson reelt gøre en forskel?</h2>
+        <div class="flex justify-center mt-12 gap-4 md:gap-6">
+            <h2 class="uppercase mt-4">Svaret er: </h2>
+            <p class="uppercase font-black text-4xl md:text-6xl flex self-center animate__animated animate__pulse infinite">Ja</p>
         </div>
     </section>
+    <Pil></Pil>
+    <div class="relative">
+        <Image src={Dame} alt="dame der taler i telefon" format="webp" class="w-[150px] absolute -translate-y-40 translate-x-72 md:translate-x-[75rem] md:w-[250px]"></Image>
+    </div>
     <Baggrund class="w-full">
-        <section class="py-28 grid md:grid-rows-4 px-52">
+        <section class="md:py-28 grid md:grid-rows-4 md:px-52 pt-36 pb-56">
         <article class="w-full md:max-w-3xl">
             <div>
                 <Steps tal="1." overskrift="Ryd op på din smartphone!"/>
@@ -75,7 +80,13 @@ import Steps from "../components/Steps.astro";
         </article>
         </section>
     </Baggrund>
-    <section>
+    <div class="relative">
+        <Image src={Mand} alt="mand der taler i telefon" format="webp" class="w-[150px] md:w-[300px] absolute -translate-y-52 md:-translate-y-[46rem] translate-x-14 md:translate-x-40"></Image>
+    </div>
+    <div class="">
+        <Pil class=""></Pil>
+    </div>
+    <section class="pt-56">
         <p class="poppins font-bold text-5xl md:text-8xl text-[#0a1748]">Tak for dit bidrag!</p>
         <Button variant="primary" size="large">Del dine resultater</Button>
     </section>
