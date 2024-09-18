@@ -22,70 +22,58 @@ import Steps from "../components/Steps.astro";
         </div>
     </section>
     <Baggrund class="w-full">
-        <article>
+        <section class="py-28 grid md:grid-rows-4 px-52">
+        <article class="w-full md:max-w-3xl">
             <div>
-                <Steps tal="1." overskrift="Ryd op på din smartphone"/>
+                <Steps tal="1." overskrift="Ryd op på din smartphone!"/>
             </div>
-            <Accordion>
-                <summary>Smid ubrugte apps ud</summary>
+            <Accordion summary="Smid ubrugte apps ud">
                 <p>Vær frygtløs! Slet de glemte apps og spil, du aldrig bruger. De optager kun plads og dræner batteri med ligegyldige opdateringer.</p>
             </Accordion>
-            <Accordion>
-                <summary>Farvel til gamle konti!</summary>
+            <Accordion summary="Farvel til gamle konti">
                 <p>Gamle konti og e-mails fra teenageårene? Ud med dem! Det giver din telefon et friskt pust og gør den hurtigere.</p>
             </Accordion>
-            <Accordion>
-                <summary>Ryd op i dine billeder</summary>
+            <Accordion summary="Ryd op i dine billeder">
                 <p>Slet dubletter og ligegyldige billeder. Du kan frigøre flere gigabyte plads!</p>
             </Accordion>
         </article>
-        <article>
-            <Steps tal="2." overskrift="Hard drive detox" /> 
-            <Accordion>
-                <summary>Slet dubletter & ubrugelige filer</summary>
+        <article class="w-full md:max-w-3xl pt-36 grid md:justify-self-end">
+            <Steps tal="2." overskrift="Hard drive detox!" /> 
+            <Accordion summary="Slet dubletter & ubrugelige filer">
                 <p>Fjern alle filer, der er blevet overflødige, eller som ligger der to gange.</p>
             </Accordion>
-            <Accordion>
-                <summary>Ryd op i fotos & videoer</summary>
+            <Accordion summary="Ryd op i fotos & videoer">
                 <p>Slet slørede billeder, dubletter, og videoer, du ikke længere har brug for.</p>
             </Accordion>
-            <Accordion>
-                <summary>Arkivér det vigtige</summary>
+            <Accordion summary="Arkivér det vigtige">
                 <p>Gem de filer, der betyder noget, og forbered dig på at finde sjove, glemte skatte!</p>
             </Accordion>
         </article>
-        <article>
-            <Steps tal="3." overskrift="Mailboks makeover"/>
-            <Accordion>
-                <summary>Arkivér & ryd ud</summary>
+        <article class="w-full md:max-w-3xl pt-36">
+            <Steps tal="3." overskrift="Mailboks makeover!"/>
+            <Accordion summary="Arkivér & ryd ud">
                 <p>Filter mails efter dato, arkivér de ældste, og slet de, du ikke længere har brug for.</p>
             </Accordion>
-            <Accordion>
-                <summary>Meld Dig Fra Nyhedsbreve</summary>
+            <Accordion summary="Meld Dig Fra Nyhedsbreve">
                 <p>Udmeld dig fra nyhedsbreve, du ikke læser, og slip af med lange samtaler, hvor du kun beholder den nyeste.</p>
             </Accordion>
-            <Accordion>
-                <summary>Søg & Slet i Massevis</summary>
+            <Accordion summary="Søg & Slet i Massevis">
                 <p>Find lignende mails ved at søge efter navne og ord, så du kan slette dem i én omgang. Vær modig og tryk på slet-knappen!</p>
             </Accordion>
         </article>
-        <article>
-            <Steps tal="4." overskrift="Nye digitale vaner"/>
-            <Accordion>
-                <summary>Drop ‘OK’ emails</summary>
+        <article class="w-full md:max-w-3xl pt-36 grid md:justify-self-end">
+            <Steps tal="4." overskrift="Nye digitale vaner!"/>
+            <Accordion summary="Drop ‘OK’ emails">
                 <p>Brug coworking-platforme i stedet for at sende unødvendige mails. Stop med ‘ok’ og ‘tak’ beskeder!</p>
             </Accordion>
-            <Accordion>
-                <summary>Centralisér og vær bevidst</summary>
+            <Accordion summary="Centralisér og vær bevidst">
                 <p>Opbevar vigtige filer i én sky, så du ikke skal have dem på alle enheder. Tænk dig om før du sikkerhedskopierer – gem kun det, du virkelig behøver.</p>
             </Accordion>
-            <Accordion>
-                <summary>Skru ned for digitalt forbrug</summary>
+            <Accordion summary="Skru ned for digitalt forbrug">
                 <p>Sluk videoen under møder, skru ned for streamingkvaliteten, begræns spilletid, og brug mindre tid på sociale medier. Mænd på tilmeldingslister og nyhedsbreve for at mindske dit miljøaftryk!</p>
             </Accordion>
         </article>
-        
-        
+        </section>
     </Baggrund>
     <section>
         <p class="poppins font-bold text-5xl md:text-8xl text-[#0a1748]">Tak for dit bidrag!</p>

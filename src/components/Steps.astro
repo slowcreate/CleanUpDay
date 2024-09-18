@@ -1,7 +1,7 @@
 ---
 const {tal, overskrift} = Astro.props;
 ---
-<section class="flex items-center underline decoration-8 decoration-[#0a1748]">
+<section class="flex items-center border-b-4 border-[#0a1748]">
     <div class="relative text-center w-[106px] h-[102px] md:w-[186px] md:h-[179px]">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186 179" fill="none">
@@ -12,5 +12,5 @@ const {tal, overskrift} = Astro.props;
             </div>
         </div>
     </div>
-    <h3>{overskrift}</h3>
+    <h3 class="pl-8">{overskrift}</h3>
 </section>
