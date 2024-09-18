@@ -16,15 +16,17 @@ import Arrows from "../components/Arrows.astro";
 			<div class="grid auto-cols-auto	auto-rows-auto">
 				<h1 class="uppercase col-span-3 row-span-3 text-center">Digital <br> Cleanup <br> Day</h1>
 				<h4 class="text-[#DB901B] row-start-4 col-start-3 -translate-y-32 -translate-x-10 md:-translate-y-48 md:translate-x-4">15. <br> marts <br> 2025</h4>
-				<div class="md:px-16 md:py-28 md:col-start-4">
+				<div class="md:px-16 md:pt-20 md:col-start-4">
 					<h2>Hvad er Digital Cleanup Day?</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex excepturi itaque odio modi facere at corporis iusto quibusdam asperiores unde quidem fuga, omnis inventore porro fugit optio? Libero, minima ut!</p>
 				</div>
 			</div>
 		</section>
-		<Image src={Heropicture} alt="" format="webp"></Image>
+		<div class="flex flex-row justify-end items-end">
+			<Image src={Heropicture} alt="" format="webp" class="relative translate-y-28"></Image>
+		</div>
 		<Baggrund class="w-full">
-			<section class="py-28 grid auto-cols-auto">
+			<section class="py-20 grid auto-cols-auto">
 				<div class="flex flex-col justify-center items-center">
 					<h3 class="mb-6">Sådan deltager du</h3>
 					<p class="mx-10 mb-10 flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tenetur! Ad nisi labore, nulla dolorem repudiandae commodi? Velit temporibus sapiente tenetur optio tempore, numquam ipsa modi quas laborum ratione. Voluptatum.</p>
@@ -35,8 +37,10 @@ import Arrows from "../components/Arrows.astro";
 				</div>
 			</section>		
 		</Baggrund>
-		<Image src={Secondpicture} alt="" format="webp" class=""></Image>
-		<section class="my-28">
+		<div class="flex flex-row justify-start items-start">
+			<Image src={Secondpicture} alt="" format="webp" class="relative -translate-y-24 md:-translate-y-48"></Image>
+		</div>
+		<section class="my-20">
 			<div>
 				<h3 class="mb-10 flex items-center justify-center">Digital Cleanup Day i numre</h3>
 				<div class="bg-[#0A1748] max-w-fit p-4 pr-24 rounded-e-full fade-in-left">
@@ -48,14 +52,16 @@ import Arrows from "../components/Arrows.astro";
 				<div class="bg-[#072AAE] max-w-fit p-4 rounded-e-full fade-in-left">
 					<h5 class="md:mx-20 md:mr-48 text-white">1,184,747 deltagere</h5>
 				</div>
-			</div>		
-			<Image src={Thirdpicture} alt="" format="webp"></Image>	
-		</section>
+			</div>	
+			<div class="flex flex-row justify-end items-end">	
+				<Image src={Thirdpicture} alt="" format="webp" class="relative translate-y-48 md:translate-y-60"></Image>	
+			</div>
+			</section>
 		<Baggrund class="w-full">
-			<section class="p-5 py-28">
+			<section class="p-5 py-20">
 				<h3 class="mb-10 flex items-center justify-center">Hvorfor bør du deltage?</h3>
-				<div class="md:flex flex-row">
-					<div class="md:ml-5">
+				<div class="flex flex-col md:flex-row justify-center">
+					<div class="md:mx-8 max-w-lg mx-auto">
 						<h6>Færre e-mails, hurtigere computer</h6>
 						<p>For hver e-mail du sender, udleder du CO2 svarende til en pære, der er tændt i 6 minutter. Skær ned på de gamle mails og få en hurtigere maskine!</p>
 						<h6>Bitcoin bruger mere energi end New Zealand</h6>
@@ -63,7 +69,7 @@ import Arrows from "../components/Arrows.astro";
 						<h6>Ryd op og forlæng levetiden på din computer</h6>
 						<p>Jo mindre digitalt skrald du har, jo længere holder dine devices. Det betyder færre regninger og mere tid med en hurtig computer!</p>
 					</div>
-					<div class="md:ml-5">
+					<div class="md:mr-8 max-w-lg mx-auto md:mx-0">
 						<h6>Mindsk den digitale jungle</h6>
 						<p>90 % af al data bliver aldrig brugt igen efter 3 måneder. Ryd op og find nemmere det, du rent faktisk skal bruge - ingen flere "hvor lagde jeg nu lige den fil?"</p>
 						<h6>Internettet sviner - og det er din chance for at ændre det</h6>
@@ -74,9 +80,9 @@ import Arrows from "../components/Arrows.astro";
 				</div>
 			</section>
 		</Baggrund>
-		<section class="my-28 md:grid grid-cols-2">
-			<div>
-				<SavetheDate class="max-w-40 mx-auto"></SavetheDate>
+		<section class="mb-20 md:grid grid-cols-2">
+			<div class="flex flex-col justify-center items-center md:block">
+				<SavetheDate class="w-full h-full"></SavetheDate>
 			</div>
 			<div class="flex flex-col justify-center items-start h-full mx-5">
 				<p class="mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, laboriosam! Id neque similique facere impedit aliquid veniam iure nisi eos omnis. Expedita reprehenderit odio aut accusamus soluta non eum cupiditate?</p>
