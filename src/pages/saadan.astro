@@ -14,7 +14,7 @@ import Pil from "../components/Pil.astro";
 ---
 
 <MainLayout title="Sådan Gør Du">
-    <section class="pb-10 text-center">
+    <section class="text-center mt-24">
         <h1>Sådan gør du!</h1>
         <h2 >Kan jeg som enkeltperson reelt gøre en forskel?</h2>
         <div class="flex justify-center mt-12 gap-4 md:gap-6">
@@ -27,7 +27,7 @@ import Pil from "../components/Pil.astro";
         <Image src={Dame} alt="dame der taler i telefon" format="webp" class="w-[150px] absolute translate-y-[17rem] md:translate-y-[34rem] md:w-[250px]"></Image>
     </div>
     <Baggrund class="w-full">
-        <section class="md:py-28 grid md:grid-rows-4 md:px-52 pt-36 pb-56">
+        <section class="md:py-28 grid md:grid-rows-4 md:px-52 pt-36 pb-56 mx-10 md:mx-0">
         <article class="w-full md:max-w-3xl">
             <div>
                 <Steps tal="1." overskrift="Ryd op på din smartphone!"/>
@@ -83,12 +83,14 @@ import Pil from "../components/Pil.astro";
     <div class="relative flex flex-row justify-start items-start">
         <Image src={Mand} alt="mand der taler i telefon" format="webp" class="w-[150px] lg:w-[300px] absolute -translate-y-[15rem] md:-translate-y-[47rem]"></Image>
     </div>
-    <div class="">
-        <Pil class=""></Pil>
+    <div class="relative flex flex-row justify-end items-end -translate-y-10 md:-translate-y-40 -z-10 pr-[100px] md:pr-[200px]">
+        <Pil class="absolute"></Pil>
     </div>
-    <section class="pt-56">
-        <p class="poppins font-bold text-5xl md:text-8xl text-[#0a1748]">Tak for dit bidrag!</p>
-        <Button variant="primary" size="large">Del dine resultater</Button>
+    <section class="md:flex justify-center items-center grid gap-x-40 gap-y-10 pt-20 md:pt-0 mx-10 mb-14">
+        <p class="poppins font-bold text-5xl md:text-7xl text-[#0a1748] uppercase flex justify-center text-center">Tak for dit bidrag!</p>
+        <div class="md:flex md:items-center">
+            <Button variant="primary" size="large" class="">Del dine resultater</Button>
+        </div>
     </section>
 </MainLayout>
 
