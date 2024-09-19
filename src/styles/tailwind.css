@@ -50,7 +50,7 @@
     @apply poppins font-black text-lg md:text-xl;
   }
   p {
-    @apply poppins text-base md:text-xl;
+    @apply poppins text-base md:text-base;
   }
 }
 
