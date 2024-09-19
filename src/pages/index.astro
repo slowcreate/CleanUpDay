@@ -24,7 +24,7 @@ import Arrows from "../components/Arrows.astro";
 			<div class="md:flex flex-row">
 				<div class="flex flex-row justify-center items-center">
 					<h1 class="uppercase text-center">Digital <br> Cleanup <br> Day</h1>
-					<h4 class="text-[#DB901B] flex items-end -translate-x-10 translate-y-20 md:-translate-x-16 md:translate-y-32">15. <br> marts <br> 2025</h4>
+					<h4 class="text-[#DB901B] flex items-end -translate-x-10 translate-y-20 md:-translate-x-16 md:translate-y-24">15. <br> marts <br> 2025</h4>
 				</div>
 				<div class="py-16 md:py-16 md:px-16 md:pt-20">
 					<h2>Hvad er Digital Cleanup Day?</h2>
@@ -50,9 +50,10 @@ import Arrows from "../components/Arrows.astro";
 		<div class="relative flex flex-row justify-start items-start">
 			<Image src={Secondpicture} alt="" format="webp" class="md:w-[400px] absolute -translate-y-36 md:-translate-y-72"></Image>
 		</div>
-		<section class="my-40 lg:my-30">
+		<section class="my-40 lg:my-30 statistik">
 			<div>
 				<h3 class="mb-20 flex items-center justify-center">Digital Cleanup Day i numre</h3>
+				<div class="fadeinstatistik">
 				<div class="bg-[#0A1748] max-w-fit p-4 pr-24 rounded-e-full fade-in-left">
 					<h5 class="md:mx-20 md:mr-44 text-white">3,625 tons CO2 undgået årligt</h5>
 				</div>
@@ -62,13 +63,14 @@ import Arrows from "../components/Arrows.astro";
 				<div class="bg-[#072AAE] max-w-fit p-4 rounded-e-full fade-in-left">
 					<h5 class="md:mx-20 md:mr-48 text-white">1,184,747 deltagere</h5>
 				</div>
+				</div>
 			</div>	
 			<div class="relative flex flex-row justify-end items-end">	
 				<Image src={Thirdpicture} alt="" format="webp" class="lg:w-[300px] absolute translate-y-60 md:translate-y-72"></Image>	
 			</div>
 			</section>
 		<Baggrund class="w-full">
-			<section class="p-10 py-20">
+			<section class="p-10 py-20 facts">
 				<h3 class="mb-10 flex items-center justify-center">Hvorfor bør du deltage?</h3>
 				<div class="flex flex-col md:flex-row justify-center">
 					<div class="md:mx-8 max-w-lg mx-auto">
@@ -90,7 +92,7 @@ import Arrows from "../components/Arrows.astro";
 				</div>
 			</section>
 		</Baggrund>
-		<section class="mb-28 md:grid grid-cols-2">
+		<section class="mb-28 md:grid grid-cols-2 save">
 			<div class="flex flex-col justify-center items-center md:block">
 				<SavetheDate class="w-full h-full"></SavetheDate>
 			</div>
@@ -108,3 +110,32 @@ import Arrows from "../components/Arrows.astro";
 		-webkit-animation:fade-in-left 4s cubic-bezier(.39,.575,.565,1.000) both;
 		animation:fade-in-left 4s cubic-bezier(.39,.575,.565,1.000) both}
 </style>
+
+<script>
+	import { inView } from "motion";
+
+	const fadeinstatistik = document.querySelector(".fadeinstatistik");
+
+	inView(fadeinstatistik, () => {
+		fadeinstatistik.classList.add("animate__animated", "animate__fadeInLeft", "animate__delay-0.5s");
+	});
+
+	const statistik = document.querySelector(".statistik");
+
+	inView(statistik, () => {
+		statistik.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+	const facts = document.querySelector(".facts");
+
+	inView(facts, () => {
+		facts.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+	const save = document.querySelector(".save");
+
+	inView(save, () => {
+		save.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+</script>
