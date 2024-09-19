@@ -14,17 +14,17 @@ import Pil from "../components/Pil.astro";
 ---
 
 <MainLayout title="Sådan Gør Du">
-    <section class="pb-40 text-center">
+    <section class="pb-10 text-center">
         <h1>Sådan gør du!</h1>
         <h2 >Kan jeg som enkeltperson reelt gøre en forskel?</h2>
         <div class="flex justify-center mt-12 gap-4 md:gap-6">
             <h2 class="uppercase mt-4">Svaret er: </h2>
-            <p class="uppercase font-black text-4xl md:text-6xl flex self-center animate__animated animate__pulse infinite">Ja</p>
+            <p class="uppercase font-black text-4xl md:text-6xl flex self-center pulsate-fwd">Ja</p>
         </div>
     </section>
     <Pil></Pil>
-    <div class="relative">
-        <Image src={Dame} alt="dame der taler i telefon" format="webp" class="w-[150px] absolute -translate-y-40 translate-x-72 md:translate-x-[45rem] lg:translate-x-[55rem] xl:translate-x-[72rem]  md:w-[250px]"></Image>
+    <div class="relative flex flex-row justify-end items-end">
+        <Image src={Dame} alt="dame der taler i telefon" format="webp" class="w-[150px] absolute translate-y-[17rem] md:translate-y-[34rem] md:w-[250px]"></Image>
     </div>
     <Baggrund class="w-full">
         <section class="md:py-28 grid md:grid-rows-4 md:px-52 pt-36 pb-56">
@@ -80,8 +80,8 @@ import Pil from "../components/Pil.astro";
         </article>
         </section>
     </Baggrund>
-    <div class="relative">
-        <Image src={Mand} alt="mand der taler i telefon" format="webp" class="w-[150px] lg:w-[300px] absolute -translate-y-52 lg:-translate-y-[23rem] xl:-translate-y-[46rem] translate-x-14 lg:-translate-x-[2rem] xl:translate-x-40"></Image>
+    <div class="relative flex flex-row justify-start items-start">
+        <Image src={Mand} alt="mand der taler i telefon" format="webp" class="w-[150px] lg:w-[300px] absolute -translate-y-[15rem] md:-translate-y-[47rem]"></Image>
     </div>
     <div class="">
         <Pil class=""></Pil>
@@ -91,4 +91,11 @@ import Pil from "../components/Pil.astro";
         <Button variant="primary" size="large">Del dine resultater</Button>
     </section>
 </MainLayout>
+
+<style>
+    .pulsate-fwd {
+        -webkit-animation: pulsate-fwd 1s steps(2, start) 0.5s infinite both;
+	    animation: pulsate-fwd 1s steps(2, start) 0.5s infinite both;
+    }
+</style>
 
