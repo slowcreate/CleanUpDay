@@ -28,7 +28,7 @@ import Pil from "../components/Pil.astro";
     </div>
     <Baggrund class="w-full">
         <section class="md:py-28 grid md:grid-rows-4 md:px-52 pt-36 pb-56 mx-10 md:mx-0">
-        <article class="w-full md:max-w-3xl">
+        <article class="w-full md:max-w-3xl accordion1">
             <div>
                 <Steps tal="1." overskrift="Ryd op på din smartphone!"/>
             </div>
@@ -42,7 +42,7 @@ import Pil from "../components/Pil.astro";
                 <p>Slet dubletter og ligegyldige billeder. Du kan frigøre flere gigabyte plads!</p>
             </Accordion>
         </article>
-        <article class="w-full md:max-w-3xl pt-36 grid md:justify-self-end">
+        <article class="w-full md:max-w-3xl pt-36 grid md:justify-self-end accordion2">
             <Steps tal="2." overskrift="Hard drive detox!" /> 
             <Accordion summary="Slet dubletter & ubrugelige filer">
                 <p>Fjern alle filer, der er blevet overflødige, eller som ligger der to gange.</p>
@@ -54,7 +54,7 @@ import Pil from "../components/Pil.astro";
                 <p>Gem de filer, der betyder noget, og forbered dig på at finde sjove, glemte skatte!</p>
             </Accordion>
         </article>
-        <article class="w-full md:max-w-3xl pt-36">
+        <article class="w-full md:max-w-3xl pt-36 accordion3">
             <Steps tal="3." overskrift="Mailboks makeover!"/>
             <Accordion summary="Arkivér & ryd ud">
                 <p>Filter mails efter dato, arkivér de ældste, og slet de, du ikke længere har brug for.</p>
@@ -66,7 +66,7 @@ import Pil from "../components/Pil.astro";
                 <p>Find lignende mails ved at søge efter navne og ord, så du kan slette dem i én omgang. Vær modig og tryk på slet-knappen!</p>
             </Accordion>
         </article>
-        <article class="w-full md:max-w-3xl pt-36 grid md:justify-self-end">
+        <article class="w-full md:max-w-3xl pt-36 grid md:justify-self-end accordion4">
             <Steps tal="4." overskrift="Nye digitale vaner!"/>
             <Accordion summary="Drop ‘OK’ emails">
                 <p>Brug coworking-platforme i stedet for at sende unødvendige mails. Stop med ‘ok’ og ‘tak’ beskeder!</p>
@@ -86,7 +86,7 @@ import Pil from "../components/Pil.astro";
     <div class="relative flex flex-row justify-end items-end -translate-y-10 md:-translate-y-40 -z-10 pr-[100px] md:pr-[200px]">
         <Pil class="absolute"></Pil>
     </div>
-    <section class="md:flex justify-center items-center grid gap-x-40 gap-y-10 pt-20 md:pt-0 mx-10 mb-14">
+    <section class="md:flex justify-center items-center grid gap-x-40 gap-y-10 pt-20 md:pt-0 mx-10 mb-14 bidrag">
         <p class="poppins font-bold text-5xl md:text-7xl text-[#0a1748] uppercase flex justify-center text-center">Tak for dit bidrag!</p>
         <div class="md:flex md:items-center">
             <Button variant="primary" size="large" class="">Del dine resultater</Button>
@@ -100,4 +100,39 @@ import Pil from "../components/Pil.astro";
 	    animation: pulsate-fwd 1s steps(2, start) 0.5s infinite both;
     }
 </style>
+
+<script>
+    import { inView } from "motion";
+
+	const accordion1 = document.querySelector(".accordion1");
+
+	inView(accordion1, () => {
+		accordion1.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+	const accordion2 = document.querySelector(".accordion2");
+
+	inView(accordion2, () => {
+		accordion2.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+	const accordion3 = document.querySelector(".accordion3");
+
+	inView(accordion3, () => {
+		accordion3.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+	const accordion4 = document.querySelector(".accordion4");
+
+	inView(accordion4, () => {
+		accordion4.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+	const bidrag = document.querySelector(".bidrag");
+
+	inView(bidrag, () => {
+		bidrag.classList.add("animate__animated", "animate__fadeIn", "animate__delay-0.7s");
+	});
+
+</script>
 
