@@ -26,15 +26,15 @@ import Baggrund from "../components/Baggrund.astro";
     
           <!-- Form -->
           <form class="mx-10 z-10">
-            <Input id="antal-gb" label="Antal GB slettet" type="text" />
-            <Input id="fornavn" label="Fornavn" type="text" />
-            <Input id="efternavn" label="Efternavn" type="text" />
-            <Input id="land" label="Land" type="text" />
-            <Input id="email" label="E-mail" type="email" />
+            <Input id="antal-gb" label="Antal GB slettet" type="text" placeholder="GB" />
+            <Input id="fornavn" label="Fornavn" type="text" placeholder="Fornavn"/>
+            <Input id="efternavn" label="Efternavn" type="text" placeholder="Efternavn"/>
+            <Input id="land" label="Land" type="text" placeholder="Land"/>
+            <Input id="email" label="E-mail" type="email" placeholder="E-mail"/>
             <Textarea id="feedback" label="Hvad fik du ud af Digital Cleanup Day?" />
 
             <!-- Knap -->
-            <div class="text-left">
+            <div class="text-left mt-4">
               <Button variant="secondary">Indsend</Button>
             </div>
           </form>
